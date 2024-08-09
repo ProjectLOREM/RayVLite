@@ -1,0 +1,322 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Wed Jul 10 19:02:41 2024
+| Host         : patch-Precision-7760 running 64-bit Ubuntu 22.04.3 LTS
+| Command      : report_methodology -file test_200_methodology_drc_routed.rpt -pb test_200_methodology_drc_routed.pb -rpx test_200_methodology_drc_routed.rpx
+| Design       : test_200
+| Device       : xc7s25csga324-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 57
++-----------+------------------+------------------------------------------------------------------+------------+
+| Rule      | Severity         | Description                                                      | Violations |
++-----------+------------------+------------------------------------------------------------------+------------+
+| TIMING-6  | Critical Warning | No common primary clock between related clocks                   | 8          |
+| TIMING-16 | Warning          | Large setup violation                                            | 46         |
+| TIMING-56 | Warning          | Missing logically or physically excluded clock groups constraint | 3          |
++-----------+------------------+------------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-6#1 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_16_clk_wiz_0 and clk_16_clk_wiz_0_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_16_clk_wiz_0] -to [get_clocks clk_16_clk_wiz_0_1]
+Related violations: <none>
+
+TIMING-6#2 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_16_clk_wiz_0 and clk_200_clk_wiz_0_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_16_clk_wiz_0] -to [get_clocks clk_200_clk_wiz_0_1]
+Related violations: <none>
+
+TIMING-6#3 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_16_clk_wiz_0_1 and clk_16_clk_wiz_0 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_16_clk_wiz_0_1] -to [get_clocks clk_16_clk_wiz_0]
+Related violations: <none>
+
+TIMING-6#4 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_16_clk_wiz_0_1 and clk_200_clk_wiz_0 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_16_clk_wiz_0_1] -to [get_clocks clk_200_clk_wiz_0]
+Related violations: <none>
+
+TIMING-6#5 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_200_clk_wiz_0 and clk_16_clk_wiz_0_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_200_clk_wiz_0] -to [get_clocks clk_16_clk_wiz_0_1]
+Related violations: <none>
+
+TIMING-6#6 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_200_clk_wiz_0 and clk_200_clk_wiz_0_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_200_clk_wiz_0] -to [get_clocks clk_200_clk_wiz_0_1]
+Related violations: <none>
+
+TIMING-6#7 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_200_clk_wiz_0_1 and clk_16_clk_wiz_0 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_200_clk_wiz_0_1] -to [get_clocks clk_16_clk_wiz_0]
+Related violations: <none>
+
+TIMING-6#8 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_200_clk_wiz_0_1 and clk_200_clk_wiz_0 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_200_clk_wiz_0_1] -to [get_clocks clk_200_clk_wiz_0]
+Related violations: <none>
+
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -1.021 ns between trigger_counter_reg[6]/C (clocked by clk_200_clk_wiz_0) and trigger_counter_reg[13]/D (clocked by clk_200_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -1.042 ns between trigger_counter_reg[6]/C (clocked by clk_200_clk_wiz_0) and trigger_counter_reg[12]/D (clocked by clk_200_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -1.070 ns between trigger_counter_reg[6]/C (clocked by clk_200_clk_wiz_0) and trigger_counter_reg[7]/D (clocked by clk_200_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -1.192 ns between trigger_counter_reg[6]/C (clocked by clk_200_clk_wiz_0) and trigger_counter_reg[15]/D (clocked by clk_200_clk_wiz_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -1.193 ns between trigger_counter_reg[6]/C (clocked by clk_200_clk_wiz_0) and trigger_counter_reg[10]/D (clocked by clk_200_clk_wiz_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -1.214 ns between trigger_counter_reg[6]/C (clocked by clk_200_clk_wiz_0) and trigger_counter_reg[11]/D (clocked by clk_200_clk_wiz_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -1.245 ns between trigger_counter_reg[6]/C (clocked by clk_200_clk_wiz_0) and trigger_counter_reg[8]/D (clocked by clk_200_clk_wiz_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#8 Warning
+Large setup violation  
+There is a large setup violation of -1.414 ns between trigger_counter_reg[6]/C (clocked by clk_200_clk_wiz_0) and trigger_counter_reg[9]/D (clocked by clk_200_clk_wiz_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#9 Warning
+Large setup violation  
+There is a large setup violation of -1.475 ns between trigger_counter_reg[6]/C (clocked by clk_200_clk_wiz_0) and trigger_counter_reg[32]/D (clocked by clk_200_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#10 Warning
+Large setup violation  
+There is a large setup violation of -3.486 ns between shift_reg[1]/C (clocked by clk_200_clk_wiz_0) and s4_reg/D (clocked by clk_200_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#11 Warning
+Large setup violation  
+There is a large setup violation of -3.562 ns between shift_reg[1]/C (clocked by clk_200_clk_wiz_0) and s3_reg/D (clocked by clk_200_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#12 Warning
+Large setup violation  
+There is a large setup violation of -4.203 ns between shift_reg[1]/C (clocked by clk_200_clk_wiz_0) and clock_running_reg/D (clocked by clk_200_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#13 Warning
+Large setup violation  
+There is a large setup violation of -4.426 ns between shift_reg[1]/C (clocked by clk_200_clk_wiz_0) and trigger_counter_reg[10]/R (clocked by clk_200_clk_wiz_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#14 Warning
+Large setup violation  
+There is a large setup violation of -4.426 ns between shift_reg[1]/C (clocked by clk_200_clk_wiz_0) and trigger_counter_reg[11]/R (clocked by clk_200_clk_wiz_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#15 Warning
+Large setup violation  
+There is a large setup violation of -4.426 ns between shift_reg[1]/C (clocked by clk_200_clk_wiz_0) and trigger_counter_reg[8]/R (clocked by clk_200_clk_wiz_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#16 Warning
+Large setup violation  
+There is a large setup violation of -4.426 ns between shift_reg[1]/C (clocked by clk_200_clk_wiz_0) and trigger_counter_reg[9]/R (clocked by clk_200_clk_wiz_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#17 Warning
+Large setup violation  
+There is a large setup violation of -4.521 ns between shift_reg[1]/C (clocked by clk_200_clk_wiz_0) and trigger_counter_reg[24]/R (clocked by clk_200_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#18 Warning
+Large setup violation  
+There is a large setup violation of -4.521 ns between shift_reg[1]/C (clocked by clk_200_clk_wiz_0) and trigger_counter_reg[25]/R (clocked by clk_200_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#19 Warning
+Large setup violation  
+There is a large setup violation of -4.521 ns between shift_reg[1]/C (clocked by clk_200_clk_wiz_0) and trigger_counter_reg[26]/R (clocked by clk_200_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#20 Warning
+Large setup violation  
+There is a large setup violation of -4.521 ns between shift_reg[1]/C (clocked by clk_200_clk_wiz_0) and trigger_counter_reg[27]/R (clocked by clk_200_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#21 Warning
+Large setup violation  
+There is a large setup violation of -4.521 ns between shift_reg[1]/C (clocked by clk_200_clk_wiz_0) and trigger_counter_reg[4]/R (clocked by clk_200_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#22 Warning
+Large setup violation  
+There is a large setup violation of -4.521 ns between shift_reg[1]/C (clocked by clk_200_clk_wiz_0) and trigger_counter_reg[5]/R (clocked by clk_200_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#23 Warning
+Large setup violation  
+There is a large setup violation of -4.521 ns between shift_reg[1]/C (clocked by clk_200_clk_wiz_0) and trigger_counter_reg[6]/R (clocked by clk_200_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#24 Warning
+Large setup violation  
+There is a large setup violation of -4.521 ns between shift_reg[1]/C (clocked by clk_200_clk_wiz_0) and trigger_counter_reg[7]/R (clocked by clk_200_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#25 Warning
+Large setup violation  
+There is a large setup violation of -4.581 ns between shift_reg[1]/C (clocked by clk_200_clk_wiz_0) and laser_reg/R (clocked by clk_200_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#26 Warning
+Large setup violation  
+There is a large setup violation of -4.644 ns between shift_reg[1]/C (clocked by clk_200_clk_wiz_0) and trigger_counter_reg[12]/R (clocked by clk_200_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#27 Warning
+Large setup violation  
+There is a large setup violation of -4.644 ns between shift_reg[1]/C (clocked by clk_200_clk_wiz_0) and trigger_counter_reg[13]/R (clocked by clk_200_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#28 Warning
+Large setup violation  
+There is a large setup violation of -4.644 ns between shift_reg[1]/C (clocked by clk_200_clk_wiz_0) and trigger_counter_reg[14]/R (clocked by clk_200_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#29 Warning
+Large setup violation  
+There is a large setup violation of -4.644 ns between shift_reg[1]/C (clocked by clk_200_clk_wiz_0) and trigger_counter_reg[20]/R (clocked by clk_200_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#30 Warning
+Large setup violation  
+There is a large setup violation of -4.644 ns between shift_reg[1]/C (clocked by clk_200_clk_wiz_0) and trigger_counter_reg[21]/R (clocked by clk_200_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#31 Warning
+Large setup violation  
+There is a large setup violation of -4.644 ns between shift_reg[1]/C (clocked by clk_200_clk_wiz_0) and trigger_counter_reg[22]/R (clocked by clk_200_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#32 Warning
+Large setup violation  
+There is a large setup violation of -4.644 ns between shift_reg[1]/C (clocked by clk_200_clk_wiz_0) and trigger_counter_reg[23]/R (clocked by clk_200_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#33 Warning
+Large setup violation  
+There is a large setup violation of -4.644 ns between shift_reg[1]/C (clocked by clk_200_clk_wiz_0) and trigger_counter_reg[32]/R (clocked by clk_200_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#34 Warning
+Large setup violation  
+There is a large setup violation of -4.646 ns between shift_reg[1]/C (clocked by clk_200_clk_wiz_0) and trigger_counter_reg[16]/R (clocked by clk_200_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#35 Warning
+Large setup violation  
+There is a large setup violation of -4.646 ns between shift_reg[1]/C (clocked by clk_200_clk_wiz_0) and trigger_counter_reg[17]/R (clocked by clk_200_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#36 Warning
+Large setup violation  
+There is a large setup violation of -4.646 ns between shift_reg[1]/C (clocked by clk_200_clk_wiz_0) and trigger_counter_reg[18]/R (clocked by clk_200_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#37 Warning
+Large setup violation  
+There is a large setup violation of -4.646 ns between shift_reg[1]/C (clocked by clk_200_clk_wiz_0) and trigger_counter_reg[19]/R (clocked by clk_200_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#38 Warning
+Large setup violation  
+There is a large setup violation of -4.646 ns between shift_reg[1]/C (clocked by clk_200_clk_wiz_0) and trigger_counter_reg[3]/R (clocked by clk_200_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#39 Warning
+Large setup violation  
+There is a large setup violation of -4.662 ns between shift_reg[1]/C (clocked by clk_200_clk_wiz_0) and trigger_counter_reg[0]/R (clocked by clk_200_clk_wiz_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#40 Warning
+Large setup violation  
+There is a large setup violation of -4.662 ns between shift_reg[1]/C (clocked by clk_200_clk_wiz_0) and trigger_counter_reg[15]/R (clocked by clk_200_clk_wiz_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#41 Warning
+Large setup violation  
+There is a large setup violation of -4.662 ns between shift_reg[1]/C (clocked by clk_200_clk_wiz_0) and trigger_counter_reg[1]/R (clocked by clk_200_clk_wiz_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#42 Warning
+Large setup violation  
+There is a large setup violation of -4.662 ns between shift_reg[1]/C (clocked by clk_200_clk_wiz_0) and trigger_counter_reg[28]/R (clocked by clk_200_clk_wiz_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#43 Warning
+Large setup violation  
+There is a large setup violation of -4.662 ns between shift_reg[1]/C (clocked by clk_200_clk_wiz_0) and trigger_counter_reg[29]/R (clocked by clk_200_clk_wiz_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#44 Warning
+Large setup violation  
+There is a large setup violation of -4.662 ns between shift_reg[1]/C (clocked by clk_200_clk_wiz_0) and trigger_counter_reg[2]/R (clocked by clk_200_clk_wiz_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#45 Warning
+Large setup violation  
+There is a large setup violation of -4.662 ns between shift_reg[1]/C (clocked by clk_200_clk_wiz_0) and trigger_counter_reg[30]/R (clocked by clk_200_clk_wiz_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#46 Warning
+Large setup violation  
+There is a large setup violation of -4.662 ns between shift_reg[1]/C (clocked by clk_200_clk_wiz_0) and trigger_counter_reg[31]/R (clocked by clk_200_clk_wiz_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-56#1 Warning
+Missing logically or physically excluded clock groups constraint  
+Multiple clocks are user generated or auto-derived on the source pin instance_name/inst/mmcm_adv_inst/CLKFBOUT but are not logically or physically exclusive with respect to one another. To have the static timing analysis match the behavior in hardware, there cannot be multiple clocks generated on the same pin and when such situation occurs, the clocks should be defined as physically or logically exclusive. The list of clocks generated on the source pin is: clkfbout_clk_wiz_0, clkfbout_clk_wiz_0_1
+Related violations: <none>
+
+TIMING-56#2 Warning
+Missing logically or physically excluded clock groups constraint  
+Multiple clocks are user generated or auto-derived on the source pin instance_name/inst/mmcm_adv_inst/CLKOUT0 but are not logically or physically exclusive with respect to one another. To have the static timing analysis match the behavior in hardware, there cannot be multiple clocks generated on the same pin and when such situation occurs, the clocks should be defined as physically or logically exclusive. The list of clocks generated on the source pin is: clk_200_clk_wiz_0, clk_200_clk_wiz_0_1
+Related violations: <none>
+
+TIMING-56#3 Warning
+Missing logically or physically excluded clock groups constraint  
+Multiple clocks are user generated or auto-derived on the source pin instance_name/inst/mmcm_adv_inst/CLKOUT3 but are not logically or physically exclusive with respect to one another. To have the static timing analysis match the behavior in hardware, there cannot be multiple clocks generated on the same pin and when such situation occurs, the clocks should be defined as physically or logically exclusive. The list of clocks generated on the source pin is: clk_16_clk_wiz_0, clk_16_clk_wiz_0_1
+Related violations: <none>
+
+

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Jul 10 19:01:12 2024
+# Process ID: 343448
+# Current directory: /home/patch/200_mhz/200_mhz.runs/synth_1
+# Command line: vivado -log test_200.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source test_200.tcl
+# Log file: /home/patch/200_mhz/200_mhz.runs/synth_1/test_200.vds
+# Journal file: /home/patch/200_mhz/200_mhz.runs/synth_1/vivado.jou
+# Running On: patch-Precision-7760, OS: Linux, CPU Frequency: 800.490 MHz, CPU Physical cores: 8, Host memory: 66572 MB
+#-----------------------------------------------------------
+source test_200.tcl -notrace

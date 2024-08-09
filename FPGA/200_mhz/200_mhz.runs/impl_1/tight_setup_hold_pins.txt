@@ -1,0 +1,19 @@
++=====================+=====================+===========================+
+| Launch Setup Clock  | Launch Hold Clock   | Pin                       |
++=====================+=====================+===========================+
+| clk_200_clk_wiz_0_1 | clk_200_clk_wiz_0_1 | clock_running_reg/D       |
+| clk_200_clk_wiz_0_1 | clk_200_clk_wiz_0_1 | s3_reg/D                  |
+| clk_200_clk_wiz_0_1 | clk_200_clk_wiz_0_1 | s4_reg/D                  |
+| clk_200_clk_wiz_0_1 | clk_200_clk_wiz_0_1 | trigger_counter_reg[29]/D |
+| clk_200_clk_wiz_0_1 | clk_200_clk_wiz_0_1 | trigger_counter_reg[30]/D |
+| clk_200_clk_wiz_0_1 | clk_200_clk_wiz_0_1 | trigger_counter_reg[31]/D |
+| clk_200_clk_wiz_0_1 | clk_200_clk_wiz_0_1 | trigger_counter_reg[25]/D |
+| clk_200_clk_wiz_0_1 | clk_200_clk_wiz_0_1 | trigger_counter_reg[27]/D |
+| clk_200_clk_wiz_0_1 | clk_200_clk_wiz_0_1 | next_out_clk_reg/D        |
+| clk_200_clk_wiz_0_1 | clk_200_clk_wiz_0_1 | trigger_counter_reg[26]/D |
+| clk_200_clk_wiz_0_1 | clk_200_clk_wiz_0_1 | trigger_counter_reg[24]/D |
+| clk_200_clk_wiz_0_1 | clk_200_clk_wiz_0_1 | trigger_counter_reg[28]/D |
+| clk_200_clk_wiz_0_1 | clk_200_clk_wiz_0_1 | trigger_counter_reg[23]/D |
+| clk_200_clk_wiz_0_1 | clk_200_clk_wiz_0_1 | trigger_counter_reg[22]/D |
+| clk_200_clk_wiz_0_1 | clk_200_clk_wiz_0_1 | trigger_counter_reg[21]/D |
++---------------------+---------------------+---------------------------+
