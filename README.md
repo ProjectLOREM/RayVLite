@@ -27,6 +27,13 @@ The optics module assembly also requires modifications.  Refer to the official o
 ![Render of the beam splitter cube adaptor](Pictures/cube.png)
 
 <br>
+For detailed instructions please follow the instructions on this page steps 6-11.
+
+https://build.openflexure.org/openflexure-delta-stage/v1.2.0/pages/reflection_illumination.html
+
+Instead of step 12, use the laser tube found here: Openflexure_Additions/laser_holder.stl.  It should attach simularly  to the the excitation filter does in step 12.
+
+
 *   Beam Splitter Installation:  Carefully insert your purchased beam splitter (see the spreadsheet for description and link) *inside* the 45-degree clip of the `fl_cube.stl` part.  **Important: You may need to carefully cut the glass of the beam splitter to ensure it fits correctly within the clip.**
 
 *   Optics Tube and Laser Holder: After installing the beam splitter in the cube, insert the assembly into the optics tube.  Attach the laser holder using the file `Openflexure_Additions/laser_holder.stl`. The shaft of the laser holder should fit snugly into the slot you created by removing the brace from the main body (step 1).
