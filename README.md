@@ -1,6 +1,6 @@
-# Building Your OpenFlexure Microscope (v7.0.0-beta3) - Modified Instructions
+# Building Your OpenFlexure Microscope (v7.0.0-beta2) - Modified Instructions
 
-This guide provides modified instructions for building the OpenFlexure Microscope v7.0.0-beta3, incorporating necessary deviations from the official build guide.  Refer to the official guide for the primary instructions: [https://build.openflexure.org/openflexure-microscope/v7.0.0-beta3/high_res_microscope.html](https://build.openflexure.org/openflexure-microscope/v7.0.0-beta3/high_res_microscope.html)
+This guide provides modified instructions for building the OpenFlexure Microscope v7.0.0-beta2, incorporating necessary deviations from the official build guide.  Refer to the official guide for the primary instructions: [https://build.openflexure.org/openflexure-microscope/v7.0.0-beta2/high_res_microscope.html](https://build.openflexure.org/openflexure-microscope/v7.0.0-beta3/high_res_microscope.html)
 
 ## Deviations
 
@@ -16,7 +16,7 @@ This brace interferes with later steps.  While ideally, this model would be edit
 
 ### 2. Optics Module Assembly
 
-The optics module assembly also requires modifications.  Refer to the official optics module instructions: [https://build.openflexure.org/openflexure-microscope/v7.0.0-beta3/high_res_optics_module.html](https://build.openflexure.org/openflexure-microscope/v7.0.0-beta3/high_res_optics_module.html)
+The optics module assembly also requires modifications.  Refer to the official optics module instructions: [https://build.openflexure.org/openflexure-microscope/v7.0.0-beta2/high_res_optics_module.html](https://build.openflexure.org/openflexure-microscope/v7.0.0-beta2/high_res_optics_module.html)
 
 **Changes:**
 
